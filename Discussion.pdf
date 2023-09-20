@@ -1,0 +1,25 @@
+Consider file “output01a.dat”
+where,
+initial velocity = 10
+angle = 45
+dt = 0.01
+here the exact landing position is 10.19, and the analytical landing position is 10.25
+
+changing dt = 0.001 the analytical position reduces to 10.20;
+
+For,
+
+initial velocity = 15
+angle = 30
+here the exact landing position is 19.86, and the analytical landing position is 19.88
+
+changing dt = 0.001 the analytical position remains at 19.88;
+
+it can be seen that reducing the time step brings the analytical value closer to the exact value. Therefore depending on the significant figures 
+required the time steps can be lowered. (here time steps >=0.0001 would would make analytical value match the exact to 2 decimal places)
+
+The change in initial conditions does change accuracy of the analytical method which can be clearly seen from the two different inital conditions.
+
+The energy plots should have no overlap between potential and kinetic energies. However, this is not the case for the analytic solution, where there 
+is a slight overlap, which can be inferred to the accuracy of the analytical method.
+
